@@ -10,7 +10,7 @@ export default function ProjectPage()  {
         <div className="w-full max-w-[1800px]">
           <a href="https://www.nicmaronline.com/" target="_blank" rel="noopener noreferrer">
             <Image
-              src="/NICMAR BANNER.jpg"
+              src="/projects/nicmar/nicmar-banner.jpg"
               alt="NICMAR Online Project"
               width={1820}
               height={500}
@@ -64,7 +64,7 @@ export default function ProjectPage()  {
         <section className="mt-6 w-full flex justify-center">
           <div className="w-full sm:-mx-[8%] xl:-mx-[24%]">
             <Image
-              src="/Accessibility.png"
+              src="/projects/nicmar/nicmar-accessibility.png"
               alt="Accessibility Overview"
               width={1820}
               height={1020}

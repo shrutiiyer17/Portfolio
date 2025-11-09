@@ -18,7 +18,7 @@ export default function Navbar() {
       {/* Left side (Logo + Links) */}
       <div className="flex items-center justify-between gap-[4px] space-x-2">
         <Link href="/">
-          <Image src="/LOGO.png" alt="My photo" width={18} height={18} />
+          <Image src="/header-logo.png" alt="My logo" width={18} height={18} />
         </Link>
 
         <Link href="/" className={getNavItemClass("/")}>

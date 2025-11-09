@@ -29,7 +29,7 @@ export default function Art() {
             }}
           >
             <Image
-              src="/Mother Teresa.jpg"
+              src="/artworks/mother-teresa.jpg"
               alt="Artwork"
               width={820}
               height={1020}
@@ -52,7 +52,7 @@ export default function Art() {
             }}
           >
             <Image
-              src="/God of Death.jpg"
+              src="/artworks/god-of-death.jpg"
               alt="Artwork"
               width={820}
               height={1020}
@@ -75,7 +75,7 @@ export default function Art() {
             }}
           >
             <Image
-              src="/Pearl Earring Girl.jpg"
+              src="/artworks/pearl-earring-girl.jpg"
               alt="Artwork"
               width={820}
               height={1020}
