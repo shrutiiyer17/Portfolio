@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { getImagePath } from "@/utils/getImagePath";
 
 export default function Art() {
   return (
@@ -29,7 +30,7 @@ export default function Art() {
             }}
           >
             <Image
-              src="/artworks/mother-teresa.jpg"
+              src={getImagePath("/artworks/mother-teresa.jpg")}
               alt="Artwork"
               width={820}
               height={1020}
@@ -52,7 +53,7 @@ export default function Art() {
             }}
           >
             <Image
-              src="/artworks/god-of-death.jpg"
+              src={getImagePath("/artworks/god-of-death.jpg")}
               alt="Artwork"
               width={820}
               height={1020}
@@ -75,7 +76,7 @@ export default function Art() {
             }}
           >
             <Image
-              src="/artworks/pearl-earring-girl.jpg"
+              src={getImagePath("/artworks/pearl-earring-girl.jpg")}
               alt="Artwork"
               width={820}
               height={1020}

@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "../components/NavBar";
 import { ThemeProvider } from "../contexts/ThemeContext";
 import { IBM_Plex_Serif } from "next/font/google"; 
+import { getImagePath } from "@/utils/getImagePath";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   title: "shrutiiyer's website",
   description: "Shruti Iyer's Portfolio",
   icons: {
-    icon: "/favicon-new.ico",
+    icon: getImagePath("/favicon-new.ico"),
   },
 };
 
