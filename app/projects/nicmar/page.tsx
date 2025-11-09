@@ -65,7 +65,7 @@ export default function ProjectPage()  {
         <section className="mt-6 w-full flex justify-center">
           <div className="w-full sm:-mx-[8%] xl:-mx-[24%]">
             <Image
-              src={getImagePath("/projects/nicmar/nicmar-accessibility.png")}
+              src={getImagePath("/projects/nicmar/nicmar-banner.jpg")}
               alt="Accessibility Overview"
               width={1820}
               height={1020}
