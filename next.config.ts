@@ -1,20 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Tell Next.js to output static HTML during build
-  output: "export",
-
-  // Disable image optimization (required for static export)
-  images: {
-    unoptimized: true,
-  },
-
-  // (Optional) If your site will be hosted under a subpath like
-  // https://username.github.io/your-repo-name/,
-  // uncomment and set basePath + assetPrefix below 👇
-
-  // basePath: "/your-repo-name",
-  // assetPrefix: "/your-repo-name/",
+  output: "export", // tells Next to generate static HTML
+  images: { unoptimized: true }, // required for GitHub Pages
+  basePath: "/Portfolio", // must match your repo name exactly (case-sensitive)
+  assetPrefix: "/Portfolio/",
+  distDir: "out",
 };
 
 export default nextConfig;

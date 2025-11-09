@@ -10,8 +10,8 @@ export default function Work() {
       href: "/projects/nicmar",
     },
     {
-      title: "Simplified Records with Tymli",
-      description: "Helped patients, doctors in simplifying health records",
+      title: "Smarter Records with Tymli",
+      description: "Simplified health records for doctors & patients",
       role: "UX Designer",
       year: 2025,
       href: "/projects/tymli-health",
@@ -19,7 +19,7 @@ export default function Work() {
   ];
 
   return (
-    <section className="pt-6 pb-16 w-full ">
+    <section className="pt-6 pb-16 w-full">
       <div className="space-y-1">
         {projects.map((project, index) => (
           <Link
@@ -33,17 +33,17 @@ export default function Work() {
                 <span className="text-[14px] md:text-[14px] text-foreground tracking-wider">
                   {project.title}
                 </span>
-                <span className="text-[14px] md:text-[14px] tracking-wide font-normal text-muted-foreground">
+                <span className="text-[13px] md:text-[13px] tracking-wide font-normal text-muted-foreground">
                   {project.description}
                 </span>
               </div>
 
-              {/* Right: role and year */}
-              <div className="flex flex-col items-end text-right min-w-[160px] gap-[2px]">
-                <span className="text-xs uppercase md:text-xs text-muted-foreground tracking-wide font-mono">
+              {/* Right: role and year (hidden on mobile) */}
+              <div className="hidden md:flex flex-col items-end text-right min-w-[160px] gap-[2px]">
+                <span className="text-xs uppercase text-muted-foreground tracking-wide font-mono">
                   {project.role}
                 </span>
-                <span className="text-muted-foreground/75 text-[14px] md:text-[14px] font-mono">
+                <span className="text-muted-foreground/75 text-[14px] font-mono">
                   {project.year}
                 </span>
               </div>
