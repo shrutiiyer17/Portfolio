@@ -1,13 +1,13 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* Light mode (default) */
+/* Always dark mode */
 :root {
-  --background: linear-gradient(to bottom, #FFFFFF, #F0F2F5);
-  --muted: #DFE4EC;
-  --foreground: #1E2127;
-  --muted-foreground: #6F7684;
-  --border: #E1E5E9;
+  --background: #0A0A0A;
+  --muted: #202020;
+  --foreground: #F9F5F3;
+  --muted-foreground: #747372;
+  --border: #24272C;
 }
 
 /* Tailwind color theme bindings */
@@ -17,26 +17,6 @@
   --color-foreground: var(--foreground);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-}
-
-/* Dark mode */
-.dark {
-  --background: #0A0A0A;
-  --muted: #202020;
-  --foreground: #F9F5F3;
-  --muted-foreground: #747372;
-  --border: #24272C;
-}
-
-/* System preference fallback */
-@media (prefers-color-scheme: dark) {
-  :root:not(.light) {
-    --background: #0A0A0A;
-    --muted: #202020;
-    --foreground: #F9F5F3;
-    --muted-foreground: #747372;
-    --border: #24272C;
-  }
 }
 
 html {
